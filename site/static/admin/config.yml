@@ -1,5 +1,9 @@
+publish_mode: editorial_workflow
+
 backend:
-  name: git-gateway
+  name: github
+  repo: anborg/one-click-hugo-cms
+  open_authoring: true
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
