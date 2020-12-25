@@ -1,8 +1,11 @@
-local_backend: true
+local_backend:
+  url : http://localhost:3001/api/v1
+  # when accessing this from other hosts
+  allowed_hosts : ['*']
 backend:
   name: git-gateway
   repo: anborg/one-click-hugo-cms
-  branch: master
+  branch: master # optional, defaults to master
   open_authoring: true
 
 media_folder: "site/static/img" # Folder where user uploaded files should go

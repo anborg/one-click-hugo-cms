@@ -1,4 +1,5 @@
 {
+  "proxy": "http://localhost:3001",
   "name": "victor-hugo",
   "version": "1.0.0",
   "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
@@ -9,6 +10,7 @@
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
     "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
+    "start:netlifyProxy": "npx netlify-cms-proxy-server",
     "preview": "run-p preview:**",
     "preview:hugo": "npm run start:hugo -- -D -F",
     "preview:webpack": "npm run start:webpack",
