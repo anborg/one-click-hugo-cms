@@ -3,7 +3,7 @@ local_backend:
   # when accessing this from other hosts
   allowed_hosts : ['*']
 backend:
-  name: git-gateway
+  name: github
   repo: anborg/one-click-hugo-cms
   branch: master # optional, defaults to master
   open_authoring: true
