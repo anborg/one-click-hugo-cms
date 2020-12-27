@@ -1,7 +1,10 @@
-local_backend:
-  url : http://localhost:3001/api/v1
-  # when accessing this from other hosts
-  allowed_hosts : ['*']
+publish_mode: editorial_workflow
+#publish_mode: simple
+#local_backend:
+#  url : http://localhost:3030/api/v1
+#  # when accessing this from other hosts
+#  allowed_hosts : ['*']
+
 backend:
   name: github
   repo: anborg/one-click-hugo-cms
@@ -9,8 +12,8 @@ backend:
   open_authoring: true
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
-public_folder: "img"
-publish_mode: editorial_workflow
+#public_folder: "img"
+
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
