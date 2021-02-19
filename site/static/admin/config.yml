@@ -6,9 +6,10 @@ publish_mode: editorial_workflow
 #  allowed_hosts : ['*']
 
 backend:
-  name: github
+#  name: github
+  name: git-gateway
   repo: anborg/one-click-hugo-cms
-  branch: master # optional, defaults to master
+#  branch: master # optional, defaults to master
   open_authoring: true
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
